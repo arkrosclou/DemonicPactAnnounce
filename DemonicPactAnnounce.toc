@@ -1,7 +1,7 @@
 ## Interface: 30300
 ## Title: |cff9482c9DemonicPact|r Announce
 ## Notes: Announces the spell power your Demonic Pact just granted, with this fight's weakest/strongest.
-## Author: Daliaty
+## Author: clou
 ## Version: 1.1
 
 DemonicPactAnnounce.lua

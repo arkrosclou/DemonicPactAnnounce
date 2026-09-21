@@ -11,8 +11,8 @@ For Demonology warlocks: tells the raid how much spell power your **Demonic Pact
 Every time your pet procs Demonic Pact, you emote the amount, plus the weakest and strongest Pact of this fight:
 
 ```
-Daliaty [Demonic Pact] +281 spell power
-Daliaty [Demonic Pact] 281 - 306 | +306 spell power
+Warlock [Demonic Pact] +281 spell power
+Warlock [Demonic Pact] 281 - 306 | +306 spell power
 ```
 
 - Only **your own** proc is announced. Another Demonology warlock's Pact in the raid does not trigger it.

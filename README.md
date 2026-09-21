@@ -1,6 +1,6 @@
 <div align="center">
 
-# DemonicPactAnnounce
+<img src="docs/title.png" width="620" alt="DemonicPactAnnounce">
 
 [![Game Version](https://img.shields.io/badge/wow-3.3.5a-blue.svg)](https://github.com/arkrosclou/DemonicPactAnnounce)
 

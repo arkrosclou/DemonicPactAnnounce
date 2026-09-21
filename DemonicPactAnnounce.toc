@@ -1,5 +1,5 @@
 ## Interface: 30300
-## Title: |cff9482c9DemonicPact|r Announce
+## Title: |cff9482c9DemonicPact|rAnnounce
 ## Notes: Announces the spell power your Demonic Pact just granted, with this fight's weakest/strongest.
 ## Author: clou
 ## Version: 1.1

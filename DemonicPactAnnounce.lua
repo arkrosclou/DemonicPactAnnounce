@@ -1,4 +1,4 @@
--- DemonicPact Announce -- emotes the spell power Demonic Pact just granted,
+-- DemonicPactAnnounce -- emotes the spell power Demonic Pact just granted,
 -- plus the weakest/strongest seen this fight. Pure observer: reads state,
 -- emotes, does nothing else.
 

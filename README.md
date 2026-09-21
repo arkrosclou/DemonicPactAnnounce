@@ -1,6 +1,6 @@
 <div align="center">
 
-# DemonicPact Announce
+# DemonicPactAnnounce
 
 [![Game Version](https://img.shields.io/badge/wow-3.3.5a-blue.svg)](https://github.com/arkrosclou/DemonicPactAnnounce)
 
@@ -28,7 +28,7 @@ There are no settings: install it and it works.
 2. Open the zip. Inside is a folder called `DemonicPactAnnounce-master`. Copy it into your addons folder
    (`Interface/AddOns`) and **rename it to `DemonicPactAnnounce`**. With the `-master` ending the game will not load it.
 3. Start the game. At the character selection screen, click **AddOns** (bottom left) and make sure
-   **DemonicPact Announce** is enabled.
+   **DemonicPactAnnounce** is enabled.
 
 ## How to update
 

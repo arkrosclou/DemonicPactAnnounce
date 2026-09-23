@@ -76,6 +76,14 @@ local function announce()
 	end
 end
 
+-- The pet puts its Pact back on itself whenever it appears: after a loading
+-- screen, a resummon, a dismount. That is no proc, and the spell power read at
+-- that moment is not what a proc would lock in. A real proc needs a pet crit,
+-- so it only happens in combat; the short quiet window after the pet appears
+-- also covers a resummon in the middle of a fight.
+local PET_SETTLE = 3 -- seconds
+local petAppearedAt = 0
+
 -- Only our own proc counts. It shows as the Pact landing on our pet, cast by
 -- our pet. The copy on us is no proof: with a second Demonology warlock in
 -- the raid the two Pacts push each other off, and ours lands on us again
@@ -94,6 +102,12 @@ local function onCombatLog(...)
 	if not petGUID or dstGUID ~= petGUID or srcGUID ~= petGUID then
 		return
 	end
+	if not UnitAffectingCombat("player") then
+		return
+	end
+	if GetTime() - petAppearedAt < PET_SETTLE then
+		return
+	end
 	if not IsSpellKnown(METAMORPHOSIS) then
 		return
 	end
@@ -106,6 +120,12 @@ events:SetScript("OnEvent", function(self, event, ...)
 		onCombatLog(...)
 	elseif event == "PLAYER_REGEN_DISABLED" then
 		pactFightMin, pactFightMax = nil, nil
+	elseif event == "UNIT_PET" then
+		if ... == "player" then
+			petAppearedAt = GetTime()
+		end
+	elseif event == "PLAYER_ENTERING_WORLD" then
+		petAppearedAt = GetTime()
 	elseif event == "PLAYER_LOGIN" then
 		-- only a warlock can own a Pact; everyone else never reads the combat log
 		local _, class = UnitClass("player")
@@ -114,6 +134,9 @@ events:SetScript("OnEvent", function(self, event, ...)
 		end
 		self:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 		self:RegisterEvent("PLAYER_REGEN_DISABLED")
+		self:RegisterEvent("UNIT_PET")
+		self:RegisterEvent("PLAYER_ENTERING_WORLD")
+		petAppearedAt = GetTime()
 	end
 end)
 events:RegisterEvent("PLAYER_LOGIN")

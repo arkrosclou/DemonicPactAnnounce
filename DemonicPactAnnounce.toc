@@ -2,6 +2,6 @@
 ## Title: |cff9482c9DemonicPact|rAnnounce
 ## Notes: Announces the spell power your Demonic Pact just granted, with this fight's weakest/strongest.
 ## Author: arkrosclou (Daliaty @ Warmane Lordaeron)
-## Version: 1.1
+## Version: 1.2
 
 DemonicPactAnnounce.lua

@@ -17,6 +17,8 @@ Warlock [Demonic Pact] 281 - 306 | +306 spell power
 
 - Only **your own** proc is announced. Another Demonology warlock's Pact in the raid does not trigger it.
 - The weakest/strongest range starts over on every pull.
+- Only a real proc counts. Your pet putting its Pact back on itself after a loading screen or a resummon
+  is not announced.
 - In a dungeon or raid it is an emote the group sees. Outside of instances it only prints to your own chat.
 - It works only with Metamorphosis talented, and does nothing on other classes.
 

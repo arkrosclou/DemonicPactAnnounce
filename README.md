@@ -6,6 +6,8 @@
 
 For Demonology warlocks: tells the raid how much spell power your **Demonic Pact** just gave them.
 
+<sub>An addon for World of Warcraft 3.3.5a (Wrath of the Lich King) — Warmane, Icecrown, Lordaeron and other 3.3.5 realms.</sub>
+
 </div>
 
 Every time your pet procs Demonic Pact, you emote the amount, plus the weakest and strongest Pact of this fight:
